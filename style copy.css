@@ -1,0 +1,612 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  font-size: 12px;
+}
+
+.page3 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+.page3 .flex {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page3 .c-headline {
+  padding: 2em 0em;
+  display: flex;
+  justify-content: center;
+  font-family: "Libre Bodoni", serif;
+  font-size: 20px;
+}
+.page3 .c-main {
+  padding: 1em 0em;
+  display: flex;
+  flex-direction: column;
+}
+.page3 .c-main p {
+  font-family: "Sawarabi Mincho", serif;
+  font-size: 16px;
+}
+.page3 .c-main legend {
+  font-family: "Satisfy", cursive;
+  font-size: 16px;
+  text-shadow: 2px 2px 2px #a68671;
+  color: #a68671;
+}
+.page3 .featured-press {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+.page3 .featured-press .fp-headline {
+  font-family: "Libre Bodoni", serif;
+}
+.page3 .featured-press .fp-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.page3 .featured-press .fp-container .goodfood,
+.page3 .featured-press .fp-container .fabfoodie,
+.page3 .featured-press .fp-container .top10 {
+  display: flex;
+  align-items: center;
+}
+.page3 .featured-press .fp-container .goodfood a,
+.page3 .featured-press .fp-container .fabfoodie a,
+.page3 .featured-press .fp-container .top10 a {
+  font-size: 20px;
+  text-decoration: none;
+}
+.page3 .featured-press .fp-container .goodfood a:visited,
+.page3 .featured-press .fp-container .fabfoodie a:visited,
+.page3 .featured-press .fp-container .top10 a:visited {
+  color: white;
+}
+.page3 .featured-press .fp-container .goodfood {
+  font-family: "Dancing Script", cursive;
+  font-size: 32px;
+}
+.page3 .featured-press .fp-container .fabfoodie {
+  font-family: "Abril Fatface", serif;
+  font-size: 24px;
+}
+.page3 .featured-press .fp-container .top10 {
+  font-size: 24px;
+  font-family: "Libre Bodoni", serif;
+}
+.page3 .featured-press .fp-container .top10 span {
+  font-size: 32px;
+}
+.page3 .featured-press .fp-container div {
+  height: 5.55rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .page3 {
+    animation: anim 5s alternate;
+  }
+  .page3 .c-headline h2 {
+    font-size: 50px;
+  }
+  .flex {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .flex .c-main p {
+    font-family: "Sawarabi Mincho", serif;
+    font-size: 2rem;
+  }
+  .flex .c-main legend {
+    font-family: "Satisfy", cursive;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 2px #a68671;
+  }
+  .flex .c-headline:hover + .c-main {
+    animation: shadow-anim 1s alternate forwards;
+  }
+  @keyframes shadow-anim {
+    from {
+      text-shadow: 0px 0px 0px rgb(0, 0, 0);
+    }
+    to {
+      text-shadow: 0px 5px 10px rgba(255, 174, 0, 0.466);
+    }
+  }
+  .featured-press {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    font-size: 19px;
+    font-family: "Libre Bodoni", serif;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .goodfood,
+  .fabfoodie,
+  .top10 {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 30px;
+    transition: transform 1s;
+  }
+  .goodfood a,
+  .fabfoodie a,
+  .top10 a {
+    text-decoration: none;
+  }
+  .goodfood a:visited,
+  .fabfoodie a:visited,
+  .top10 a:visited {
+    color: white;
+  }
+  .goodfood:hover,
+  .fabfoodie:hover,
+  .top10:hover {
+    transform: scale(1.1);
+    text-shadow: 0px 10px 10px rgba(69, 10, 10, 0.8078431373);
+  }
+  .goodfood .b span,
+  .fabfoodie .b span,
+  .top10 .b span {
+    font-size: 40px;
+  }
+  .gf {
+    font-family: "Dancing Script", cursive;
+    font-size: 32px;
+  }
+  .fabfoodie {
+    font-family: "Abril Fatface", serif;
+    font-size: 24px;
+  }
+  .top10 .a {
+    font-size: 24px;
+    font-family: "Abril Fatface", serif;
+  }
+  .top10 .b {
+    font-family: "Cinzel", serif;
+  }
+  .headline-p2 {
+    padding: 8em 4em;
+  }
+  .headline-p2 h2 {
+    font-size: 30px;
+  }
+}
+.page4 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(/images/reservation-bg1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+}
+.page4 input:focus {
+  outline: none;
+}
+.page4 .reservation-container {
+  border: 1px solid rgba(255, 255, 255, 0.062);
+  margin-top: 2em;
+  border-radius: 8px;
+  text-align: center;
+  width: 200px;
+  height: 310px;
+  background-color: rgba(69, 10, 10, 0.8078431373);
+}
+.page4 .reservation-container h3 {
+  margin-bottom: 1em;
+}
+.page4 .reservation-container .btn {
+  margin-bottom: 2em;
+  background-color: white;
+  color: rgba(69, 10, 10, 0.8078431373);
+  font-weight: bold;
+  border: none;
+  height: 2rem;
+  width: 8rem;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.page4 .reservation-container .btn a {
+  text-decoration: none;
+}
+.page4 .reservation-container .btn a:visited {
+  color: rgba(69, 10, 10, 0.8078431373);
+}
+.page4 .reservation-container .btn:hover {
+  background-color: rgba(69, 10, 10, 0.8078431373);
+  color: white;
+  border: 1px solid white;
+}
+.page4 .reservation-container #name,
+.page4 .reservation-container #email,
+.page4 .reservation-container #city-list,
+.page4 .reservation-container #date-time,
+.page4 .reservation-container #person-count {
+  height: 1.5em;
+  color: rgba(69, 10, 10, 0.8078431373);
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 8px;
+  border-style: none;
+}
+.page4 .reservation-container #name:focus,
+.page4 .reservation-container #email:focus,
+.page4 .reservation-container #city-list:focus,
+.page4 .reservation-container #date-time:focus,
+.page4 .reservation-container #person-count:focus {
+  background-color: rgba(69, 10, 10, 0.8078431373);
+  border: 1px solid white;
+  color: white;
+}
+.page4 .map {
+  margin-top: 2em;
+}
+.page4 .map .map-container {
+  border-radius: 8px;
+  height: 320px;
+  text-align: center;
+  width: 360px;
+  background-color: rgba(69, 10, 10, 0.8078431373);
+  border: 1px solid rgba(255, 255, 255, 0.062);
+}
+.page4 .map .map-container button {
+  color: rgba(69, 10, 10, 0.8078431373);
+  width: 3em;
+  height: 1.7em;
+  border-radius: 8px;
+  border-style: none;
+}
+.page4 .map .map-container button:hover {
+  background-color: rgba(69, 10, 10, 0.8078431373);
+  border: 1px solid white;
+  color: white;
+}
+.page4 .map .map-container h2 {
+  margin: 1em;
+}
+.page4 .map .map-container #location {
+  height: 1.5em;
+  width: 20em;
+  border-radius: 8px;
+  border-style: none;
+}
+.page4 .map .map-container #location:focus {
+  background-color: rgba(69, 10, 10, 0.8078431373);
+  color: white;
+  font-weight: bold;
+  border: 1px solid white;
+}
+.page4 .map iframe {
+  margin: 1em;
+  width: 325px;
+  height: 200px;
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 900px) {
+  .page4 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(/images/reservation-bg1.png);
+    background-size: cover;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+  }
+  .page4 .map .map-container button {
+    width: 8rem;
+    font-size: 14px;
+    height: 1.8em;
+  }
+  .page4 .map .map-container button:hover {
+    background-color: rgba(69, 10, 10, 0.8078431373);
+    color: white;
+  }
+  .page4 input:focus {
+    outline: none;
+  }
+  .page4 .reservation-container {
+    border: 1px solid rgb(85, 0, 0);
+    background-color: rgba(69, 10, 10, 0.8078431373);
+    height: 410px;
+    width: 300px;
+    text-align: center;
+    border-radius: 8px;
+    margin-left: 1em;
+    margin-right: 1em;
+    animation: anim 3s alternate;
+    transition: transform 0.5s ease-out;
+  }
+  .page4 .reservation-container #name,
+  .page4 .reservation-container #email,
+  .page4 .reservation-container #city-list,
+  .page4 .reservation-container #date-time,
+  .page4 .reservation-container #person-count {
+    height: 1.8em;
+    color: rgba(69, 10, 10, 0.8078431373);
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    border-style: none;
+  }
+  .page4 .reservation-container #name:focus,
+  .page4 .reservation-container #email:focus,
+  .page4 .reservation-container #city-list:focus,
+  .page4 .reservation-container #date-time:focus,
+  .page4 .reservation-container #person-count:focus {
+    background-color: rgba(69, 10, 10, 0.8078431373);
+    border: 1px solid white;
+    color: white;
+  }
+  .page4 .reservation-container:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(69, 10, 10, 0.8078431373);
+  }
+  .page4 .reservation-container h3 {
+    margin: 1em;
+    font-size: 20px;
+  }
+  .page4 .reservation-container .btn {
+    margin-top: 1em;
+    background-color: white;
+    color: rgba(69, 10, 10, 0.8078431373);
+    font-weight: bold;
+    border: none;
+    height: 2rem;
+    width: 8rem;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .page4 .reservation-container .btn a {
+    text-decoration: none;
+  }
+  .page4 .reservation-container .btn a:visited {
+    color: rgba(69, 10, 10, 0.8078431373);
+  }
+  .page4 .reservation-container .btn:hover {
+    background-color: rgba(69, 10, 10, 0.8078431373);
+    color: white;
+    border: 1px solid white;
+  }
+  .page4 .map {
+    display: flex;
+    text-align: center;
+  }
+  .page4 .map .map-container {
+    border: 1px solid rgb(85, 0, 0);
+    text-align: center;
+    background-color: rgba(69, 10, 10, 0.8078431373);
+    border-radius: 8px;
+    width: 525px;
+    height: 525px;
+    margin-top: 3em;
+    margin-right: 2em;
+    animation: anim 3s alternate;
+    transition: transform 0.5s ease-out;
+  }
+  .page4 .map .map-container:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(69, 10, 10, 0.8078431373);
+  }
+  .page4 .map .map-container h2 {
+    padding-top: 1em;
+    text-decoration: underline;
+  }
+  .page4 .map .map-container iframe {
+    border-radius: 5px;
+    padding-top: 10px;
+    width: 500px;
+    height: 375px;
+  }
+  .page4 #location {
+    border-style: none;
+    height: 1.5em;
+    width: 27rem;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(69, 10, 10, 0.8078431373);
+  }
+  .page4 #location:focus {
+    background-color: rgba(69, 10, 10, 0.8078431373);
+    color: white;
+    border: 1px solid white;
+  }
+  .form1 button {
+    width: 3.5em;
+    background: white;
+    color: rgba(69, 10, 10, 0.8078431373);
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    height: 1.6em;
+    border-radius: 8px;
+  }
+  .form1 button:hover {
+    background-color: rgba(69, 10, 10, 0.8078431373);
+    color: white;
+    border: 1px solid white;
+  }
+  @keyframes anim {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page4 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(/images/reservation-bg1.png);
+    background-size: cover;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .page4 input:focus {
+    outline: none;
+  }
+  .page4 .reservation-container {
+    border: 1px solid rgb(85, 0, 0);
+    background-color: rgba(69, 10, 10, 0.8078431373);
+    height: 430px;
+    width: 300px;
+    text-align: center;
+    border-radius: 8px;
+    margin-left: 100px;
+    animation: anim 3s alternate;
+    transition: transform 0.5s ease-out;
+  }
+  .page4 .reservation-container label {
+    font-size: 14px;
+  }
+  .page4 .reservation-container #name,
+  .page4 .reservation-container #email,
+  .page4 .reservation-container #city-list,
+  .page4 .reservation-container #date-time,
+  .page4 .reservation-container #person-count {
+    height: 2em;
+    color: rgba(69, 10, 10, 0.8078431373);
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    border-style: none;
+  }
+  .page4 .reservation-container #name:focus,
+  .page4 .reservation-container #email:focus,
+  .page4 .reservation-container #city-list:focus,
+  .page4 .reservation-container #date-time:focus,
+  .page4 .reservation-container #person-count:focus {
+    background-color: rgba(69, 10, 10, 0.8078431373);
+    border: 1px solid white;
+    color: white;
+  }
+  .page4 .reservation-container:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(69, 10, 10, 0.8078431373);
+  }
+  .page4 .reservation-container .btn {
+    background-color: white;
+    color: rgba(69, 10, 10, 0.8078431373);
+    font-weight: bold;
+    border: none;
+    height: 2rem;
+    width: 8rem;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .page4 .reservation-container .btn a {
+    text-decoration: none;
+  }
+  .page4 .reservation-container .btn a:visited {
+    color: rgba(69, 10, 10, 0.8078431373);
+  }
+  .page4 .reservation-container .btn:hover {
+    background-color: rgba(69, 10, 10, 0.8078431373);
+    color: white;
+    border: 1px solid white;
+  }
+  .page4 .map {
+    display: flex;
+  }
+  .page4 .map .map-container {
+    border: 1px solid rgb(85, 0, 0);
+    text-align: center;
+    background-color: rgba(69, 10, 10, 0.8078431373);
+    border-radius: 8px;
+    width: 525px;
+    height: 550px;
+    margin-top: 100px;
+    margin-right: 100px;
+    animation: anim 3s alternate;
+    transition: transform 0.5s ease-out;
+  }
+  .page4 .map .map-container .form1 {
+    font-size: 16px;
+  }
+  .page4 .map .map-container .form1 button {
+    background-color: white;
+    color: rgba(69, 10, 10, 0.8078431373);
+    font-weight: bold;
+    border: none;
+    height: 2rem;
+    width: 8rem;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .page4 .map .map-container .form1 button a {
+    text-decoration: none;
+  }
+  .page4 .map .map-container .form1 button a:visited {
+    color: rgba(69, 10, 10, 0.8078431373);
+  }
+  .page4 .map .map-container .form1 button:hover {
+    background-color: rgba(69, 10, 10, 0.8078431373);
+    color: white;
+    border: 1px solid white;
+  }
+  .page4 .map .map-container h2 {
+    text-decoration: underline;
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .page4 .map .map-container iframe {
+    border-radius: 8px;
+    padding-top: 10px;
+    width: 500px;
+    height: 400px;
+  }
+  .page4 #location {
+    border-style: none;
+    height: 1.5em;
+    width: 27rem;
+    border-radius: 8px;
+    font-size: 16px;
+    color: rgba(69, 10, 10, 0.8078431373);
+    margin-top: 10px;
+  }
+  .page4 #location:focus {
+    background-color: rgba(69, 10, 10, 0.8078431373);
+    color: white;
+    border: 1px solid white;
+  }
+  @keyframes anim {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}/*# sourceMappingURL=style copy.css.map */

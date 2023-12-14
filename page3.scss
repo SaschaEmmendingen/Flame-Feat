@@ -1,0 +1,87 @@
+.page3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  
+    .flex {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .c-headline {
+      padding: 2em 0em;
+      display: flex;
+      justify-content: center;
+      font-family: "Libre Bodoni", serif;
+      font-size: 20px;
+    }
+    .c-main {
+      padding: 1em 0em;
+      display: flex;
+      flex-direction: column;
+  
+      p {
+        font-family: "Sawarabi Mincho", serif;
+        font-size: 16px;
+      }
+      legend {
+        font-family: "Satisfy", cursive;
+        font-size: 16px;
+        text-shadow: 2px 2px 2px $secondary;
+        color: $secondary;
+      }
+    }
+  
+    .featured-press {
+      margin-top: 1em;
+      margin-bottom: 2em;
+  
+      .fp-headline {
+        font-family: "Libre Bodoni", serif;
+      }
+      .fp-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+  
+        .goodfood,
+        .fabfoodie,
+        .top10 {
+          display: flex;
+          align-items: center;
+  
+          a {
+            font-size: 20px;
+            text-decoration: none;
+  
+            &:visited {
+              color: white;
+            }
+          }
+        }
+        .goodfood {
+          font-family: "Dancing Script", cursive;
+          font-size: 32px;
+        }
+        .fabfoodie {
+          font-family: "Abril Fatface", serif;
+          font-size: 24px;
+        }
+        .top10 {
+          font-size: 24px;
+          font-family: "Libre Bodoni", serif;
+          span {
+            font-size: 32px;
+          }
+        }
+      }
+      .fp-container div {
+        height: 5.55rem;
+      }
+    }
+  }
+  
+  
